@@ -1,0 +1,9 @@
+package com.score2;
+
+public class Record2_1 {
+
+	String name;
+	int[] score = new int[3]; //kor, eng, mat
+	int tot, ave, rank;
+	
+}
