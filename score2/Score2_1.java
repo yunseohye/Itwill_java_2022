@@ -1,5 +1,5 @@
 package com.score2;
-
+//강사님 풀이
 import java.util.Scanner;
 
 import com.score2.Record2;
