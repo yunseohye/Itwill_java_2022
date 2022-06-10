@@ -1,5 +1,5 @@
 package com.score2;
-
+//강사님 풀이
 public class Record2_1 {
 
 	String name;
