@@ -25,11 +25,11 @@ class Circle extends Super {
 	//final은 상수를 변수로 받는 변수이기 때문에
 	//한 번 값을 넣으면 바꿀수 없다.
 	
-	public Circle(int r) {
+	public Circle(int r) {//오버로딩 된 생성자로 객체를 생성
 		
 		super("원"); //부모의 오버로딩 생성자를 찾아가라
 		
-		this.r = r;
+		this.r = r; 
 	}
 	
 	public void circleArea() {
@@ -44,6 +44,7 @@ class Circle extends Super {
 class Recta extends Super {
 	
 	private int w,h;
+	// 생략된 기본 생성자로 밑에 rectArea에서 객체를 생성함.
 	
 	public void rectArea(int w, int h) {
 		this.w = w;
@@ -59,9 +60,12 @@ class Recta extends Super {
 		System.out.println("가로: " + w);
 		System.out.println("세로: " + h);
 		System.out.println("넓이: " + area);
+		//super.write();
+		//부모와 자식관계가 성립이 된 메소드 안에서만 사용이 가능하다.
 		
 	}
-	//@Override 어노테이션(annotation) - 부모와 같은 출력 메소드라면 이름이다를때 오타를 찾아줌
+	//@Override 어노테이션(annotation)
+	//- 부모와 같은 출력 메소드의 이름이 다르게 입력됬을 때 오타를 찾아줌
 	/*
 	override
 	: 부모와 자식관계에서 역할이 똑같은 메소드 이름을 가지는 것
@@ -86,7 +90,8 @@ public class Test4 {
 		
 		Recta r = new Recta();
 		r.rectArea(10, 20);
-		r.write(); 
+		r.write(); //부모것이 아닌 내것으로 출력이 된다.
+		//부모의 write는 쓰고싶어도 쓸 수 없음.
 		
 	}
 
