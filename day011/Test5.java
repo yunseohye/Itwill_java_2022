@@ -21,7 +21,7 @@ public class Test5 {
 		System.out.println(s2.equals(s3)); //false
 		//주소도 틀리고 실제 데이터 값도 틀리기 때문에 둘 다 false가 나옴
 		/*
-		 String은 자료형의 흉내를 낸 클래스이기 때문에 실제 위치를 찾아가야
+		 String은 자료형의 흉내를 낸 클래스이기 때문에 실제 데이터를 찾아가야
 		 하기 때문에 String의 값은 equals로 비교한다!
 		 */
 		System.out.println(s2.equalsIgnoreCase(s3)); //true
