@@ -29,6 +29,7 @@ public class Test5 {
 
 		String s4 = "abc.def.hij";
 		//index   :  01234597890
+		//눈으로 볼 수는 없지만 내부적으로 인덱스가 생성이 된다.
 
 		System.out.println(s4.indexOf(".")); //3
 		//왼쪽에서 부터 순서대로 값을 출력
@@ -60,8 +61,10 @@ public class Test5 {
 		//String str = "abcdefg";
 		//char ch = str.charAt(2);
 		char ch = "abcdefg".charAt(2);
+		//두번째 인덱스에 있는 Char문자 하나를 꺼내와라
 		System.out.println(ch); //c
 		//String은 무조건 인덱스가 0부터 배열된다.
+		System.out.println(Integer.toString(ch)); //99 ASCII값
 
 		System.out.println("abcdefg".startsWith("abc"));
 		//문자 abcdefg가 abc로 시작하는가? true
