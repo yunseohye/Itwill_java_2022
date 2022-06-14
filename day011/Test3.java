@@ -42,6 +42,8 @@ public class Test3 {
 		long start = System.nanoTime();
 
 		StringBuffer str = new StringBuffer("A");
+		//생성자를 오버라이딩 한 코드
+		
 		for(int i=1;i<50000;i++) {
 			str.append("A");
 			//append = 문자열을 누적하는 코드이다.
