@@ -21,7 +21,9 @@ public class Test2 {
 		System.out.println("ob1.equals(ob3): " + ob1.equals(ob3));
 		//true, String은 equals로 비교해야 한다.
 		//객체가 담고 있는 데이터가 동일하기 때문에 true가 나온다.
+		//String의 equals를 비교 하는 것이기 때문에 string을 찾아가 데이터 값을 비교함
 		//object의 equls는 주소를 비교하지만 String의 equals는 value값을 비교함
+		//주소를 가지고 찾아가서 저장되어있는 데이터를 비교하여라!
 		
 		ob2 = "korea";
 		System.out.println("ob1==ob2: "+ (ob1==ob2)); //false
