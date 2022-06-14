@@ -3,6 +3,8 @@ package com.day011;
 /*
 Wrapper 클래스
 기본 자료형을 객체로 사용할 수 있게 해준다.
+기본 자료형은 메소드가 없기 때문에 명령어를 사용할 수 없다.
+자료형의 형태를 변형시켜주고 싶을 때 사용한다.
 
 자료형
 -> boolean, byte, char, short, int, long, float, double
@@ -17,6 +19,7 @@ reference(class) 자료형
 */ 
 
 /*
+자료형에만 해당되기 때문에 Call By~랑 헷갈리지 말 것!
 Auto-Boxing : (stack -> heap)
 스택영역에 있는 자료형이 힙 영역의 클래스로 넘어가 저장되는 것
 Auto-UnBoxing : (heap -> stack)
@@ -76,6 +79,7 @@ public class Test7 {
  자료형은 형변환이라는 명칭을 사용하지만 Class는 UPCAST, DOWNCAST라는 명칭 사용
  B = A; 	--> UPCAST 		  -- o
  B = (B)a;  --> 명시적 UPCAST -- o
+ UPCAST를 하게되면 사용권한이 줄어든다. 부모의 값을 자식의 값으로 바꾼것이기 때문
  
  A = B; 	--> 에러  		  -- X
  A = (A)B	--> 명시적 DOWNCAST -- o
