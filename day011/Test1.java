@@ -23,7 +23,7 @@ public class Test1 {
 		//주소값은 각 객체마다 때문에 값이 false가 나온다.
 		
 		System.out.println("ob1.equals(ob2):" + ob1.equals(ob2));
-		//false, equals는 최상위 부모인 object의 값이기 때문에 false
+		//false, equals는 최상위 부모인 object의 값이기 때문에 주소를 비교함.
 		
 		
 		//해쉬코드[클래스이름@해쉬코드]
@@ -36,3 +36,5 @@ public class Test1 {
 	}
 
 }
+//부모가 object인지 확인하고 싶다면?
+//오른쪽버튼 - source - override에서 부모를 확인할 수 있음
