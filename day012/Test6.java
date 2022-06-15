@@ -14,7 +14,7 @@ class Super {
 	public static final double PI;
 	//한 번만 만들 수 있고 초기화도 한 번만 가능하다.-> 값이 고정
 
-	static {
+	static { //static블록 무조건 실행이 된다.
 		PI = 3.14; //double형태이기 때문에 밑에 r에 굳이 double을 붙이지 않아도 됨
 	} 
 
