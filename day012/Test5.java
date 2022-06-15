@@ -26,6 +26,7 @@ public class Test5 {
 
 		if(ob1==ob2)
 			System.out.println("동일 객체...");
+		//Call By Reference
 
 	}
 
