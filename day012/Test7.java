@@ -14,8 +14,8 @@ abstract class ShapeClass {//추상클래스
 
 	public abstract void draw(); 
 	//추상메소드 - 처음에 내용을 정의하지않고 오버라이드 한 곳에서 입력
-	//추상메소드를 private로 정립하면 오버라이드가 불가능하기 때문에 기본이 protected
-
+	//추상메소드를 private로 정립하면 상속,오버라이드가 불가능하기 때문에 기본이 protected
+	//public을 생략하면 protected가 자동으로 적용된다.
 }
 
 class Cir extends ShapeClass{ 
