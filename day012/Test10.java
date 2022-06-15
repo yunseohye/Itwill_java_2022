@@ -9,7 +9,7 @@ class SuperTest{
 	}
 	
 	public int hap() {
-		return a + b;
+		return a + b; //10+20 = 30
 	}
 }
 
@@ -23,7 +23,7 @@ class SubTest extends SuperTest{
 
 	@Override
 	public int hap() {
-		return a + b + c;
+		return a + b + c; //10+100+200 = 310
 	}
 	
 	
@@ -42,7 +42,7 @@ public class Test10 {
 		//부모가 자식보다 큰개념이기 때문에 형변환을 해주지 않아도 된다.
 		//SuperTest ob2 = (SuperTest)ob1;
 		
-		System.out.println("ob2.b: "+ ob2.b); 
+		System.out.println("ob2.b: "+ ob2.b); //20
 		
 		System.out.println("합: " + ob2.hap()); //310
 		//메소드를 부모와 나 둘 다 가지고 있으면 내것이 실행이 된다.
