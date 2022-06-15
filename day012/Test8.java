@@ -15,6 +15,8 @@ abstract class SortInt{ //추상클래스
 		//초기화
 		sorting();
 		//추상메소드의 sorting을 호출 but 추출할 값이 없다.
+		
+		//값을 넣고 값이 초기화 되는 순간 sorting을 실행하여라
 
 	}
 
@@ -63,7 +65,7 @@ abstract class SortInt{ //추상클래스
 
 class SortTest extends SortInt{
 
-	@Override
+	@Override//추상메소드이기 때문에 무조건 Override해줘야 한다.
 	protected void sorting() { 
 		//위에 sorting메소드는 선언, 정의만 해두어서 실행할 수 없기 때문에 이 메소드를 추출한다.
 		//메소드는 무조건 내 메소드를 출력한다.(상속 공식)
