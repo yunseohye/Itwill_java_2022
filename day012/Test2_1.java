@@ -1,5 +1,5 @@
 package com.day012;
-
+//강사님 코드
 import java.util.Calendar;
 import java.util.Scanner;
 
@@ -31,18 +31,17 @@ public class Test2_1 {
 		
 		week = cal.get(Calendar.DAY_OF_WEEK);
 		
-		int endDay = cal.getActualMaximum(Calendar.DATE);
 		
-		System.out.println(week);
+		//System.out.println(week);
 		
 		System.out.println("\n  일  월  화  수  목  금  토"); 
 		System.out.println("------------------------------");
 		
-		for(i=0;i<week-1;i++) {
+		for(i=1;i<week;i++) {
 			System.out.print("    ");
 		}
 		
-		for(i=1; i<=endDay;i++) {
+		for(i=1; i<=cal.getActualMaximum(Calendar.DATE);i++) {
 			
 			System.out.printf("%4d", i);
 			
