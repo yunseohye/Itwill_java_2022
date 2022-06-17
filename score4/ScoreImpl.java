@@ -83,7 +83,7 @@ public class ScoreImpl implements Score{
 
 			if(hak.equals(vo.getHak())) {
 
-				it.remove();
+				lists.remove(vo);
 				break;
 			}
 			
