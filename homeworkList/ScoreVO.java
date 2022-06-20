@@ -33,7 +33,7 @@ public class ScoreVO {
 			return null;
 		}
 		
-		String str = String.format("%4s %4s %4d", ID,name,PT);
+		String str = String.format("회원번호: %2s 이름: %2s PT횟수: %2d", ID,name,PT);
 		
 		return str;
 	}
