@@ -61,7 +61,9 @@ public class Test2 {
 		}
 		
 		System.out.println("\n[value값 찾기]");
-		if(h.containsValue("강아랑")) { //value는 비교하기 힘들기 때문에 사용 잘 안함
+		if(h.containsValue("강아랑")) { 
+			//value는 class로 값을 여러개 가지고 있기 때문에 비교하기 힘듦 -> 사용 잘 안함
+			//key값은 int or String등 값을 가지기 때문에 비교하기 좀 더 수월하다.
 			System.out.println("강아랑이 존재한다.");
 		} else {
 			System.out.println("강아랑이 존재하지 않는다.");
