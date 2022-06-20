@@ -38,8 +38,6 @@ public class Test4 {
 		String s = b3.get();
 		System.out.println(s);
 		
-		
-		
 	}
 
 }
