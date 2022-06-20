@@ -19,8 +19,9 @@ public class ScoreMain {
 
 			do {
 				System.out.println("회원정보 입력");
-				System.out.print("1.회원정보 입력 2. 회원정보 출력 3. 회원정보 삭제 4. 회원정보 수정"
-						+ " 5.회원번호 검색 6. 회원이름 검색 7.종료");
+				System.out.print("1.회원정보 입력 \n2.회원정보 출력 \n3.회원정보 삭제 \n4.회원정보 수정"
+						+ " \n5.회원번호 검색 \n6.회원이름 검색 \n7.종료");
+				System.out.print("\n---------------------------\n");
 				System.out.print(":");
 				ch = sc.nextInt();
 			}while(ch<1);
