@@ -28,7 +28,7 @@ public class ScoreVO {
 	@Override
 	public String toString() {
 		
-		String str = String.format("%4s %4d",name,PT);
+		String str = String.format("이름:%2s PT횟수: %2d회",name,PT);
 		
 		return str;
 	}
