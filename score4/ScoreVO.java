@@ -94,6 +94,8 @@ public class ScoreVO { //Value object
 	@Override
 	public String toString() { 
 		//print를 직접 만들어도 되지만 부모가 가진 toString을 오버라이드해서 사용
+		//String으로 반환값을 내보내 값을 출력한다.
+		//System out print는 값을 직접 넣어 출력함.
 		if(hak==null||hak.equals("")) {
 			return null;
 		}
