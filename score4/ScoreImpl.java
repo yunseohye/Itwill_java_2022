@@ -83,12 +83,11 @@ public class ScoreImpl implements Score{
 
 			if(hak.equals(vo.getHak())) {
 
-				lists.remove(vo);
+				lists.remove(vo); //실제 저장된 장소의 데이터를 삭제
 				break;
 			}
 			
 		}
-		
 
 	}
 
