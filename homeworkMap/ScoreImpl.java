@@ -10,7 +10,7 @@ import com.homeworkMap.ScoreVO;
 
 public class ScoreImpl implements Score { //score가 여러개이기 때문에 꼭 5번 선택하기
 
-		private Map<String, ScoreVO> hMap = new TreeMap<>();
+		private Map<String, ScoreVO> IDMap = new TreeMap<>();
 
 		Scanner sc = new Scanner(System.in);
 		String ID;
@@ -28,13 +28,13 @@ public class ScoreImpl implements Score { //score가 여러개이기 때문에 �
 
 			ScoreVO vo = new ScoreVO();
 
-			System.out.print("회원 이름을 입력하시오."); //suzi
+			System.out.print("회원 이름을 입력하시오."); 
 			vo.setName(sc.next());
 
 			System.out.print("PT를 실행한 횟수를 입력하시오.");
 			vo.setPT(sc.nextInt());
 
-			hMap.put(ID, vo);
+			IDMap.put(ID, vo);
 
 			System.out.println("회원정보를 생성하였습니다.");
 		}
@@ -42,21 +42,21 @@ public class ScoreImpl implements Score { //score가 여러개이기 때문에 �
 		@Override
 		public boolean searchID(String ID) {
 			
-			return hMap.containsKey(ID);
+			return IDMap.containsKey(ID);
 			
 		}
 		
 		@Override
 		public void print() {
 			
-			Iterator<String> it = hMap.keySet().iterator(); //set이라는 collection의 것을 빌려옴
+			Iterator<String> it = IDMap.keySet().iterator(); //set이라는 collection의 것을 빌려옴
 
 			while(it.hasNext()) {
 
 				String ID = it.next();
-				ScoreVO vo = hMap.get(ID); 
+				ScoreVO vo = IDMap.get(ID); 
 
-				System.out.println(ID + " " + vo.toString());
+				System.out.println("회원번호: "+ID + " " + vo.toString());
 
 			}
 			
@@ -69,7 +69,7 @@ public class ScoreImpl implements Score { //score가 여러개이기 때문에 �
 			ID = sc.next();
 
 			if(searchID(ID)) {
-				hMap.remove(ID);
+				IDMap.remove(ID);
 				System.out.println("회원정보를 삭제하였습니다.");
 			} else {
 				System.out.println("회원정보 삭제 실패!");
@@ -88,7 +88,7 @@ public class ScoreImpl implements Score { //score가 여러개이기 때문에 �
 				return;
 			}
 			
-			ScoreVO vo = hMap.get(ID);
+			ScoreVO vo = IDMap.get(ID);
 
 			System.out.print("회원 이름을 입력하시오."); 
 			vo.setName(sc.next());
@@ -96,7 +96,7 @@ public class ScoreImpl implements Score { //score가 여러개이기 때문에 �
 			System.out.print("PT를 실행한 횟수를 입력하시오.");
 			vo.setPT(sc.nextInt());;
 
-			hMap.put(ID, vo);
+			IDMap.put(ID, vo);
 
 			System.out.println("수정 성공!!");
 		
@@ -105,7 +105,7 @@ public class ScoreImpl implements Score { //score가 여러개이기 때문에 �
 		@Override
 		public void findID() {
 		
-			System.out.print("검색할 회원정보를 입력하시오.");
+			System.out.print("검색할 회원번호를 입력하시오.");
 			ID = sc.next();
 
 			if(!searchID(ID)) {
@@ -113,8 +113,8 @@ public class ScoreImpl implements Score { //score가 여러개이기 때문에 �
 				return;
 			}
 
-			ScoreVO vo = hMap.get(ID);
-			System.out.println(ID + " "+ vo.toString());
+			ScoreVO vo = IDMap.get(ID);
+			System.out.println("회원번호: "+ID + " "+ vo.toString());
 		}
 		
 		@Override
@@ -123,14 +123,14 @@ public class ScoreImpl implements Score { //score가 여러개이기 때문에 �
 			System.out.println("검색할 이름을 입력하시오.");
 			String name = sc.next();
 
-			Iterator<String> it = hMap.keySet().iterator();
+			Iterator<String> it = IDMap.keySet().iterator();
 			
 			boolean flag = false;
 			
 			while(it.hasNext()) {
 
 				String ID = it.next();
-				ScoreVO vo = hMap.get(ID);
+				ScoreVO vo = IDMap.get(ID);
 
 				if(name.equals(vo.getName())) {
 					System.out.println(ID + " "+ vo.toString());
