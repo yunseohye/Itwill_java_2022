@@ -21,8 +21,8 @@ public class Test1 {
          String str = it.next();
          System.out.print(str + " ");
       }
- 
-      System.out.println("\n[ListIterator]");
+      System.out.println();
+      
       ListIterator<String> it1 = lists.listIterator();
       
       while(it1.hasNext()) {
