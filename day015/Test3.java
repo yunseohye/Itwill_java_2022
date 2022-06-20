@@ -1,5 +1,7 @@
 package com.day015;
 
+//대부분의 컬렉션의 데이터는 add로 값을 추가한다.
+
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Iterator;
@@ -59,7 +61,7 @@ public class Test3 {
 		q.add("울산");
 		
 		while(q.peek() != null) { //값의 데이터가 있을 때 까지만 출력한다.
-			System.out.print(q.poll() + " ");
+			System.out.print(q.poll() + " "); // it.next()와 동일한 수식
 		}
 	
 		System.out.println("\n[List]");
@@ -95,6 +97,7 @@ public class Test3 {
 		
 		System.out.println("[값 삭제]");
 		list2.subList(2, 5).clear(); //뒷자리 값은 -1이 되어 출력된다.
+		//2,3,4번 째 값을 삭제한다.
 		for(String ss : list2) {
 			System.out.print(ss + " ");
 		}
