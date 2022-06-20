@@ -165,9 +165,12 @@ public class ScoreImpl implements Score { //score가 여러개이기 때문에 �
 
 			if(name.equals(vo.getName())) {
 				System.out.println(hak + " "+ vo.toString());
+				//다이렉트로 vo값을 출력하지않았기 때문에 toString으로 값을 받아줌
+				//toString을 오버라이드 한 경우 vo만 찍어도 출력이 가능
 				flag = true;
+				//한번이라도 이름이 있었다 하면 무조건 출력되게 하는 것
 			}
-
+			
 		}
 
 		if(flag) {
