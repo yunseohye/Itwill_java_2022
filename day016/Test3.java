@@ -15,7 +15,9 @@ class MyException extends Exception{ //class에게 Exception을 상속받아 그
 		//메시지 값을 바꿔서 출력할 수 있다.
 
 		super(msg); //오버로딩된 생성자를 찾아가서 메시지를 넣어라
+		//호출할때 마다 메시지의 값을 바꿀 수 있음.
 		//Test2의 new Exception("연산자 입력 오류!!"); 작업과 같음
+		//직접적으로 값을 넣을 경우 하나의 값만 가질 수 있기 때문에 우회적으로 호출한다.
 
 	}
 
