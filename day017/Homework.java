@@ -36,11 +36,6 @@ public class Homework {
 	
 	private static int saram = name.length;
 	
-	public Homework(int saram, String[] name) {
-		this.saram = saram;
-		this.name = name;
-	}
-		
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
@@ -63,11 +58,13 @@ public class Homework {
 		
 		Random rd = new Random();
 		
+		int j[] = new int [saram];
+		
 		for(int i=0;i<saram;i++) {
 			
-			int j = rd.nextInt(saram)+1; 
+			 j[i] = rd.nextInt(saram); 
 			
-			System.out.println((i+1)+"번째 발표자 : "+name[j]);			
+			System.out.println((i+1)+"번째 발표자 : "+ j[i]);			
 		}
 		
 		
