@@ -56,10 +56,6 @@ public class Test2 {
 			System.out.printf("%4d", su);
 		}
 		
-		
-		
-		
-		
 	}
 
 }
