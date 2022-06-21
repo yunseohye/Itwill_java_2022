@@ -60,6 +60,8 @@ public class Test1 {
 			
 			System.out.println("그 밖의 에러!!"); //사용자정의 에러메시지
 
+		} finally {
+			System.out.println("난 항상 보인다.");
 		}
 
 	}
