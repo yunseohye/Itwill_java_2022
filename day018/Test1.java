@@ -21,7 +21,7 @@ public class Test1 {
 		
 		System.out.print("문자열을 입력하시오."); //abcd
 		while((data=System.in.read()) !=-1) { //사용자가 몇자를 입력할지 모르니까 while
-		//System.in.read()는 기본적으로 정수를 반환한다.
+		//System.in.read()는 기본적으로 정수(int)를 반환한다.
 		//컴퓨터는 이진수라 0,1을 반환하기 때문에 -1값은 false
 			
 			char ch = (char)data;
