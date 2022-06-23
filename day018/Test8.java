@@ -5,21 +5,23 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.util.Scanner;
 
+//파일은 파일을 만들 수 없다.
+
 public class Test8 {
 
 	public boolean filecopy(String str1, String str2) {
 
 		//이부분은 꼭 기억해두기!
 		File f = new File(str1);
-		
 		if(!f.exists()) {
 			return false;
 		}
 		//기억해두기~~~
 		
 		try {
-
-			FileInputStream fis = new FileInputStream(str1);
+			
+			FileInputStream fis = new FileInputStream(str1); 
+			//str1자리에 f를 줘도 같은 값이 출력된다.
 			FileOutputStream fos = new FileOutputStream(str2);
 
 			int data;
