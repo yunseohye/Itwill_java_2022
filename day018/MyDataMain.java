@@ -12,6 +12,9 @@ public class MyDataMain {
 		FileOutputStream fos = new FileOutputStream("c:\\doc\\out6.txt");
 		ObjectOutputStream oos = new ObjectOutputStream(fos);
 		
+		//MyData ob1 = new MyData("배수지",30);
+		//oos.writeObject(ob1); 
+		//이 형태를 밑에 한줄 코드로 줄여놓은 것임.
 		
 		oos.writeObject(new MyData("배수지",30));
 		oos.writeObject(new MyData("유인나",40));
