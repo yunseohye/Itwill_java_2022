@@ -13,7 +13,7 @@ public class Test2 {
 		//System.out을 OutputStream으로 감싸준 관계.
 		//System.out의 힘이 약할 때 감싸줘 다른 힘을 더 주는 것이다.
 		
-		byte[] b = new byte[3]; //기본 buffer
+		byte[] b = new byte[3]; //기본 buffer, 메모리버퍼라고 함.
 		
 		b[0] = 65;
 		b[1] = 97;
