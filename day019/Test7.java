@@ -14,6 +14,7 @@ import javax.swing.JMenuItem;
 import javax.swing.JOptionPane;
 
 //메뉴 만들기
+//swing, 내가 만들어놓은 색, 디자인이그대로 유지된다. awt와는 다름
 public class Test7 extends JFrame implements ActionListener {
 	private static final long serialVersionUID = 1L;
 
@@ -46,8 +47,6 @@ public class Test7 extends JFrame implements ActionListener {
 		
 		mbar.add(menu);
 		setJMenuBar(mbar);
-		
-		
 
 		addWindowListener(new WindowAdapter() {
 
