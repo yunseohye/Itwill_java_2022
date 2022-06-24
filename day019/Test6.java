@@ -1,5 +1,5 @@
 package com.day019;
-
+//마우스 이벤트
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Frame;
@@ -88,7 +88,7 @@ public class Test6 extends Frame{
 			x = e.getX();
 			y = e.getY();
 			
-			repaint();
+			repaint(); //계속 그려라
 
 		}
 
@@ -97,7 +97,7 @@ public class Test6 extends Frame{
 
 			String str = String.format("(%d,%d)",e.getX(),e.getY());
 			
-			lbl.setText(str);
+			lbl.setText(str); //좌표를 맨 아래 출력해라
 			
 		}
 		
