@@ -16,6 +16,7 @@ public class Test5 extends Frame implements ActionListener{
 	private static final long serialVersionUID = 1L;
 
 	private TextField[] tf = new TextField[4];
+	//클래스인 텍스트필드의 배열 데이터를 넣기 위해 객체를 생성
 
 	private Label result = new Label("", Label.LEFT);
 
@@ -28,14 +29,15 @@ public class Test5 extends Frame implements ActionListener{
 		setTitle("성적처리");
 
 		setLayout(null); //수동으로 좌표를 넣을때 반드시 필요함 (0,0)
-
+		//레이아웃에 값을 넣기위해 null로 초기화작업 해줌.
+		
 		for(int i=0;i<5;i++) {
 
 			Label lbl = new Label();
 
-			lbl.setText(title[i]);
+			lbl.setText(title[i]); //이름
 
-			lbl.setBounds(10, (i+1)*30, 50, 20);
+			lbl.setBounds(10, (i+1)*30, 50, 20); //위치지정
 
 			add(lbl);
 
@@ -128,6 +130,8 @@ public class Test5 extends Frame implements ActionListener{
 			}
 			result.setText(Integer.toString(tot));
 			//result.setText(" " + tot); null+정수 = String
+			//일반 자바는 찍히기도하지만 awt는 반드시 형변환을 해줘야한다.
+		
 		} catch (Exception e2) {
 			result.setText("Error!!");
 		}
@@ -136,12 +140,14 @@ public class Test5 extends Frame implements ActionListener{
 
 	//두군데서 사용하기 때문에 직접 오버라이딩 하는 Test3방법은 번거로워짐
 	//Test2와 같은 형태로 만들어준다~~
+	//Nested class 클래스 안의 내부클래스
 	class KeyHandler extends KeyAdapter {
 
 		@Override
 		public void keyPressed(KeyEvent e) {//키보드의 값 아무거나 눌러도 반응함
 
 			Object ob = e.getSource();
+			//106가지중의 키보드 값을 받아오게 한다.
 
 			//키보드의 값 중 엔터에만 반응을 보여라
 			if(e.getKeyCode() != KeyEvent.VK_ENTER) {
@@ -172,9 +178,11 @@ public class Test5 extends Frame implements ActionListener{
 
 				for(int i=0; i<tf.length; i++) {
 
+					//강사님 설명할때 유심히 듣기!
 					if(i!=3&tf[i]==t) {
+						//i가 3이 아니면서 tf가 자기 자신일때
 						tf[i+1].requestFocus();
-						return;
+						return; //이 if문에서는 큰의미는 없다
 					}else if(tf[3]==t) {
 						//배열의 3번째 엔터를 치면 결과로 넘어가야하기 때문에
 						//마지막 엔터값은 따로 처리해주는 것이다.
