@@ -21,7 +21,7 @@ public class Test3 extends Frame{
 				System.exit(0);
 			}
 		
-		});
+		});//무명의 클래스
 		
 		setVisible(true);
 		
