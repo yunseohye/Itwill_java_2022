@@ -11,7 +11,8 @@ import java.awt.event.WindowListener;
 
 //Listener : 많이 사용되는 용어. 감시자 역할을 함.
 //WindowListener : 감시도구를 가지고 있는 인터페이스
-public class Test1 extends Frame implements WindowListener{ //윈도우에 대한 모든것을 가지고 있음
+public class Test1 extends Frame implements WindowListener{ 
+	//윈도우에 대한 모든것을 가지고 있음
 	 
 	private static final long serialVersionUID = 1L;
 
