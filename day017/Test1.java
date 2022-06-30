@@ -1,5 +1,7 @@
 package com.day017;
 
+//스레드 - 멀티태스킹하는 것
+
 class MyThread1 extends Thread{
 
 	private int num;
