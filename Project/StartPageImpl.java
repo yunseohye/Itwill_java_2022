@@ -349,7 +349,7 @@ public class StartPageImpl implements StartPage {
 					"\t\t＼＼                             ",
 				    "\t\t ＼＼＼∧_∧_                    ", 
 					"\t\t ＼|￣( ･ω∩)∩ 　　　　         ",     
-					"\t\t＼|＼|￣( ^ω∧)∧              ",        
+					"\t\t＼ |＼|￣( ^ω∧)∧              ",        
 					"\t\t ＼◎＼|＼|￣(*･∀･）            ",     
 					"\t\t 　 ＼◎＼|＼/っｙっ＼           ",       
 					"\t\t 　　　＼◎＼|ニニニニ|          ",    
