@@ -32,6 +32,7 @@ public class MovieVO {
 	}
 	public void setPer(Double per) {
 		this.per = per;
+		
 	}
 	public Double getGrade() {
 		return grade;
