@@ -17,7 +17,7 @@ class MyThread2 implements Runnable {
 		
 	}
 	
-	@Override
+	@Override //생략가능하지만 오타가 생길까봐 하는 것.
 	public void run() {
 
 		int i = 0;
