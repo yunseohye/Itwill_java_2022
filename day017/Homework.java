@@ -42,6 +42,7 @@ public class Homework {
 		
 		int saram;
 		
+		
 		System.out.print("발표자 인원 수?");
 		saram = sc.nextInt();
 		
@@ -58,11 +59,16 @@ public class Homework {
 		
 		Random rd = new Random();
 		
-		int j[] = new int [saram];
+		int j[] = new int[saram];
 		
 		for(int i=0;i<saram;i++) {
 			
 			 j[i] = rd.nextInt(saram); 
+			 
+			 if(j[i]==saram ) {
+				 saram--;
+				 break;
+			 }
 			
 			System.out.println((i+1)+"번째 발표자 : "+ j[i]);			
 		}
