@@ -1,5 +1,6 @@
 package com.score4;
 
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -17,6 +18,7 @@ public class ScoreImpl implements Score{
 	private List<ScoreVO> lists = new ArrayList<>();
 	//List<ScoreVO> : 자료형, lists : 변수, new ArrayList<>(): 자식, Upcast한 것
 	//사용빈도수가 정말 많은 코딩이다.
+	//0622 list는 자체적으로 implements Serializable을 가지고 있는 상태임
 
 	Scanner sc = new Scanner(System.in);
 
