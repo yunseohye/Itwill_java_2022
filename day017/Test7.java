@@ -9,7 +9,7 @@ class MyThread7 extends Thread {//스레드
 
 	private Thread next; //스레드 속의 스레드
 
-	public void setNext(Thread next) {
+	public void setNext(Thread next) {//초기화메소드
 		this.next = next;
 	}
 
