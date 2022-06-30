@@ -24,7 +24,7 @@ public class Test9 extends Thread{
 			}
 		};
 		
-		Timer t = new Timer();
+		Timer t = new Timer(); //타이머를 통해 위에 task작업을 실행해줌
 		
 		Calendar now = Calendar.getInstance();
 		
