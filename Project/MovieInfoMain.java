@@ -67,7 +67,7 @@ public class MovieInfoMain extends Thread{
 						"\t\t\t＼＼                             ",
 					    "\t\t\t ＼＼＼∧_∧_                    ", 
 						"\t\t\t ＼|￣( ･ω∩)∩ 　　　　         ",     
-						"\t\t\t＼|＼|￣( ^ω∧)∧              ",        
+						"\t\t\t＼ |＼|￣( ^ω∧)∧              ",        
 						"\t\t\t ＼◎＼|＼|￣(*･∀･）            ",     
 						"\t\t\t 　 ＼◎＼|＼/っｙっ＼           ",       
 						"\t\t\t 　　　＼◎＼|ニニニニ|          ",    
